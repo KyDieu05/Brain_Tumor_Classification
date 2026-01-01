@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+venv/
+.env/
+
+# Dataset lớn
+data/
+dataset/
+*.zip
+*.rar
+
+# Model
+*.h5
+*.keras
+*.pt
+*.pth
+
+# Notebook checkpoints
+.ipynb_checkpoints/
