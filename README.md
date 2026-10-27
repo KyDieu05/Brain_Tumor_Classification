@@ -129,16 +129,13 @@ Inference latency depends on hardware, batch size, input resolution, preprocessi
 
 ### False Negative Rate (FNR)
 
-In this project, FNR is intended to measure the proportion of actual tumor images incorrectly classified as `notumor`:
+In this project, FNR measures the percentage of actual tumor images incorrectly classified as `notumor`.
 
-\[
-\mathrm{FNR} =
-\frac{\text{Tumor images predicted as no tumor}}
-{\text{All actual tumor images}}
-\times 100\%
-\]
+**Formula:**
 
-This definition is specific to the project's evaluation setup. It should not be confused with the false negative rate for a particular tumor subtype or with a clinically validated screening sensitivity.
+`FNR (%) = (Number of actual tumor images predicted as notumor / Total number of actual tumor images) × 100`
+
+This definition is specific to the project's evaluation setup. It should not be confused with the false negative rate for a particular tumor subtype or with clinically validated screening sensitivity.
 
 ## Experimental Results
 
@@ -177,6 +174,7 @@ All models report an FNR of 0% in the current table. This result requires additi
 
 ## Repository Structure
 
+```text
 Brain_Tumor_Classification/
 ├── notebook/
 │   └── experiment.ipynb
@@ -190,11 +188,13 @@ Brain_Tumor_Classification/
 ├── results/
 │   ├── models_comparison.png
 │   ├── inference_latency_comparison.png
-│   └── accuracy_inference_latency.png
+│   ├── accuracy_inference_latency.png
+│   └── models_result_table.png
 ├── requirements.txt
 ├── .gitignore
 ├── LICENSE
 └── README.md
+```
 
 ## Getting Started
 
