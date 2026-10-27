@@ -1,0 +1,68 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.nbconvert.ipynb
+
+# Trained models and checkpoints
+checkpoints/
+logs/
+log_*/
+runs/
+tensorboard/
+*.keras
+*.h5
+*.hdf5
+*.weights.h5
+saved_model/
+
+# Datasets - do not upload MRI data by default
+data/
+datasets/
+dataset/
+train/
+test/
+valid/
+validation/
+final_test_clean/
+brain_tumor_test_clean/
+
+# Compressed datasets
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# Generated results
+outputs/
+reports/generated/
+*.log
+*.tmp
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+secrets.*
+credentials.json
+service-account*.json
+
+# OS and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
